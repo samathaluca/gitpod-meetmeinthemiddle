@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Meet Me In The Middle</title>
+  <head>
+    <title>Meet me in the middle</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-    <body>
-    <header class="container-fluid navbar-section">
-        <nav class="navbar navbar-light bg-light nav">
-            <a id="nav-title" class="navbar-brand uppercase" href="#">
-                Date Planner
-                <h2>MEET ME IN THE MIDDLE</h2>
-            </a>
-        </nav>
-    </header>
-
+  <body>
+    <h1>MEET ME IN THE MIDDLE</h1>
+    <div style="float: right; background-color: lightblue">
+      <div id="map" style="width:650px; height:600px;"></div>
+    </div>
     <div
-      style="height:600px; background-color:mistyrose"
+      style="float: left; width: 400px; height:600px; background-color:mistyrose"
     >
       <form>
         <div class="form-group">
@@ -38,18 +30,20 @@
           placeholder="In KM" rows="1"></textarea>
         </div>
       </form>
-      <form>
+      <section name="frm_map" id="frm_map">
+        <table>
 
-          <div>
-            <h4>Meeting Place selection</h4>
-
+          <tr>
+            <th>Types</th>
+            <td>
               <div id="type_holder" style="height: 200px; overflow-y: scroll;">
                 <!-- Dynamic Content -->
               </div>
-
-          </div>
-          <div>
-
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
               <input
                 type="button"
                 value="Show"
@@ -57,34 +51,21 @@
                 onclick="renderMap();"
               />
               <input type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </section>
 
-          </div>
-        </form>
-    <div>
-      <div id="map" style="height:600px;"></div>
     </div>
-     <footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">About</h5>
-                <p class="inline-block">
-                    Date Planner
-                </p>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Made by</h5>
-                <p class="inline-block">
-                    Sam Gore
-                </p>
-            </div>
-        </div>
-    </footer>
+    <!--<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=renderMap"
+    async defer></script>-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize"
       async
-      defer>
-    </script>
+      defer
+    ></script>
     <script type="text/javascript" src="main.js"></script>
-</body>
+  </body>
 </html>
