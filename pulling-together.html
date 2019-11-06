@@ -4,10 +4,11 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900|Audiowide|Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -98,6 +99,45 @@
     <h4>Chosen by Fate</h4>
   </div>
 
+    <section class="container-fluid">
+        <div class="row" style="height:600px; background-color:#c293d2">
+            <div class="col-xs-12 col-sm-4 col-md-4 filter-column">
+                <form>
+                    <div class="form-group">
+                        <label for="addressA">Where you are:</label>
+                        <textarea class="form-control" id="addressA" rows="1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="AddressB">Where they are:</label>
+                        <textarea class="form-control" id="addressB" rows="1"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="radius">Search Radius:</label>
+                        <textarea class="form-control" id="radius" value="5"
+                        placeholder="In KM" rows="1"></textarea>
+                    </div>
+                </form>
+                <form>
+                    <div>
+                    <h4>Meeting Place selection</h4>
+                        <div id="type_holder" style="height: 200px; overflow-y: scroll;">
+                        </div>
+                    </div>
+                    <input
+                    type="button"
+                     value="Show"
+                    id="submit"
+                    onclick="renderMap();"
+                    />
+                    <input type="reset" value="Reset" />
+                    </div>
+                </form>
+             </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 ">
+            <div id="map" style="height:600px;"></div>
+        </div>
+     </section>
   <!-- carousel bootstrap. CSS amendments in external stylesheet-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script
