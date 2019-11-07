@@ -29,6 +29,8 @@ var autocomplete2;
 
 var countryRestrict = {'country': 'in'};
 var selectedTypes = [];
+
+
 function initialize()
 {
 autocomplete = new google.maps.places.Autocomplete((document.getElementById('addressA')), {
@@ -45,6 +47,8 @@ center: samsroad,
 zoom: 12
 });
 }
+
+
 function renderMap()
 {
 // Get the user defined values
@@ -65,7 +69,9 @@ selectedTypes.push($(this).val());
 });
 var geocoder = new google.maps.Geocoder();
 var selLocLat = 0;
-var selLocLng = 0;
+var selLocwilmslow, UKLng = 0;
+
+
 geocoder.geocode({'address': addressA}, function(results, status) {
 if (status === 'OK')
 {
@@ -74,7 +80,16 @@ if (status === 'OK')
 /////
 selLocLatA = results[0].geometry.location.lat();
 selLocLngA= results[0].geometry.location.lng();
+}
 /////
+
+/////
+else
+{
+alert('Geocode was not successful for the following reason: ' + status);
+}
+/////
+
 
 //var samsroad = new google.maps.LatLng(53.3360, -2.2081);
 var samsroad = new google.maps.LatLng(selLocLatA, selLocLngA);
@@ -94,15 +109,17 @@ location: samsroad,
 radius: radius,
 types: selectedTypes
 };
+
+
 infowindow = new google.maps.InfoWindow();
 var service = new google.maps.places.PlacesService(map);
 service.nearbySearch(request, callback);
 }
-else
-{
-alert('Geocode was not successful for the following reason: ' + status);
-}
-});
+//##else
+//##{
+//##alert('Geocode was not successful for the following reason: ' + status);
+//##}
+);
 }
 function callback(results, status)
 {
@@ -175,8 +192,8 @@ infowindow.open(map, this);
 </table>
 </form>
 </div>
-
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize" async defer></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </body>
 </html>
+>
