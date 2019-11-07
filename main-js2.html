@@ -90,7 +90,7 @@ alert('Geocode was not successful for the following reason: ' + status);
 
 }
 );
-///// end of geocoder function
+///// end of geocoder function for Address A
 
 geocoder.geocode({'address': addressB}, function(results, status) {
 if (status === 'OK')
@@ -111,10 +111,10 @@ alert('Geocode was not successful for the following reason: ' + status);
 
 }
 );
-///// end of geocoder function
+///// end of geocoder function for Address B
 
 //var samsroad = new google.maps.LatLng(53.3360, -2.2081);
-var samsroad = new google.maps.LatLng(selLocLatA, selLocLngA);
+var samsroad = new google.maps.LatLng(selLocLatB, selLocLngB);
 map = new google.maps.Map(document.getElementById('map'), {
 center: samsroad,
 zoom: 14
@@ -205,6 +205,7 @@ infowindow.open(map, this);
 </table>
 </form>
 </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize" async defer></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </body>
