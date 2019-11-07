@@ -47,7 +47,7 @@ center: samsroad,
 zoom: 12
 });
 }
-
+///////////////////////////////////////////////////////////////////////////////////
 
 function renderMap()
 {
@@ -61,12 +61,14 @@ var addressB = document.getElementById('addressB').value;
 var radius = parseInt(document.getElementById('radius').value) * 1000;
 // get the selected type
 selectedTypes = [];
+
 $('.types').each(function(){
 if($(this).is(':checked'))
 {
 selectedTypes.push($(this).val());
 }
 });
+
 var geocoder = new google.maps.Geocoder();
 //var selLocLat = 0;
 //var selLocwilmslow, UKLng = 0;
@@ -115,12 +117,13 @@ infowindow = new google.maps.InfoWindow();
 var service = new google.maps.places.PlacesService(map);
 service.nearbySearch(request, callback);
 }
-//##else
-//##{
-//##alert('Geocode was not successful for the following reason: ' + status);
-//##}
 );
+///// end of geocoder function
 }
+// end of function **--renderMap--**
+//////////////////////////////////////////////////////////////////////////////
+
+
 function callback(results, status)
 {
 if (status == google.maps.places.PlacesServiceStatus.OK)
