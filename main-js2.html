@@ -94,6 +94,7 @@ else
 {
 alert('Geocode was not successful for the following reason: ' + status);
 }
+)
 
 /////
 geocoder2.geocode({'address': addressB}, function(results, status) {
@@ -107,7 +108,7 @@ else
 {
 alert('Geocode was not successful for the following reason: ' + status);
 }
-
+)
 /////
 
 
@@ -116,7 +117,7 @@ var samsroad = new google.maps.LatLng(selLocLatA, selLocLngA);
 map = new google.maps.Map(document.getElementById('map'), {
 center: samsroad,
 zoom: 14
-});
+};
 
 /////
 
