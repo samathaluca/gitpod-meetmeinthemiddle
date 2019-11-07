@@ -113,8 +113,12 @@ alert('Geocode was not successful for the following reason: ' + status);
 );
 ///// end of geocoder function for Address B
 
+
+MidLat = (selLocLatA + selLocLatB) / 2
+MidLng = (selLocLngA + selLocLngB) / 2
+
 //var samsroad = new google.maps.LatLng(53.3360, -2.2081);
-var samsroad = new google.maps.LatLng(selLocLatB, selLocLngB);
+var samsroad = new google.maps.LatLng(MidLat, MidLng);
 map = new google.maps.Map(document.getElementById('map'), {
 center: samsroad,
 zoom: 14
