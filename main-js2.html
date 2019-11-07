@@ -70,14 +70,22 @@ geocoder.geocode({'address': addressA}, function(results, status) {
 if (status === 'OK')
 {
 //console.log(results[0].geometry.location.lat() + ' - ' + results[0].geometry.location.lng());
-selLocLat = results[0].geometry.location.lat();
-selLocLng = results[0].geometry.location.lng();
+
+/////
+selLocLatA = results[0].geometry.location.lat();
+selLocLngA= results[0].geometry.location.lng();
+/////
+
 //var samsroad = new google.maps.LatLng(53.3360, -2.2081);
-var samsroad = new google.maps.LatLng(selLocLat, selLocLng);
+var samsroad = new google.maps.LatLng(selLocLatA, selLocLngA);
 map = new google.maps.Map(document.getElementById('map'), {
 center: samsroad,
 zoom: 14
 });
+
+/////
+
+
 //console.log(selectedTypes);
 var request = {
 location: samsroad,
@@ -167,6 +175,7 @@ infowindow.open(map, this);
 </table>
 </form>
 </div>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize" async defer></script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </body>
