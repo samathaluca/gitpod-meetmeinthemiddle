@@ -47,7 +47,7 @@ center: samsroad,
 zoom: 12
 });
 }
-///////////////////////////////////////////////////////////////////////////////////
+
 
 function renderMap()
 {
@@ -61,15 +61,22 @@ var addressB = document.getElementById('addressB').value;
 var radius = parseInt(document.getElementById('radius').value) * 1000;
 // get the selected type
 selectedTypes = [];
-
 $('.types').each(function(){
 if($(this).is(':checked'))
 {
 selectedTypes.push($(this).val());
 }
 });
-
 var geocoder = new google.maps.Geocoder();
+
+/////
+var geocoder2 = new google.maps.Geocoder();
+/////
+
+
+var selLocLat = 0;
+var selLocwilmslow, UKLng = 0;
+
 
 geocoder.geocode({'address': addressA}, function(results, status) {
 if (status === 'OK')
@@ -82,62 +89,63 @@ selLocLngA= results[0].geometry.location.lng();
 }
 /////
 
+/////
 else
 {
 alert('Geocode was not successful for the following reason: ' + status);
 }
+
 /////
-
-}
-);
-///// end of geocoder function for Address A
-
-geocoder.geocode({'address': addressB}, function(results, status) {
+geocoder2.geocode({'address': addressB}, function(results, status) {
 if (status === 'OK')
 {
-//console.log(results[0].geometry.location.lat() + ' - ' + results[0].geometry.location.lng());
-
-/////
 selLocLatB = results[0].geometry.location.lat();
 selLocLngB= results[0].geometry.location.lng();
 }
-/////
 
 else
 {
 alert('Geocode was not successful for the following reason: ' + status);
 }
+
 /////
 
-}
-);
-///// end of geocoder function for Address B
-
-
-MidLat = (selLocLatA + selLocLatB) / 2
-MidLng = (selLocLngA + selLocLngB) / 2
 
 //var samsroad = new google.maps.LatLng(53.3360, -2.2081);
-var samsroad = new google.maps.LatLng(MidLat, MidLng);
+var samsroad = new google.maps.LatLng(selLocLatA, selLocLngA);
 map = new google.maps.Map(document.getElementById('map'), {
 center: samsroad,
 zoom: 14
 });
 
+/////
+
+
+//console.log(selectedTypes);
 var request = {
 location: samsroad,
+//radius: 5000,
+//types: ["atm"]
 radius: radius,
 types: selectedTypes
 };
+
 
 infowindow = new google.maps.InfoWindow();
 var service = new google.maps.places.PlacesService(map);
 service.nearbySearch(request, callback);
 }
-// end of function **--renderMap--**
-//////////////////////////////////////////////////////////////////////////////
 
+//##else
+//##{
+//##alert('Geocode was not successful for the following reason: ' + status);
+//##}
 
+/////
+);
+/////
+
+}
 function callback(results, status)
 {
 if (status == google.maps.places.PlacesServiceStatus.OK)
