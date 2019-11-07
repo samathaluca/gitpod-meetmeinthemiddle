@@ -22,9 +22,11 @@ return string.charAt(0).toUpperCase() + string.slice(1);
 var map;
 var infowindow;
 var autocomplete;
+
 /////
 var autocomplete2;
 /////
+
 var countryRestrict = {'country': 'in'};
 var selectedTypes = [];
 function initialize()
@@ -47,6 +49,11 @@ function renderMap()
 {
 // Get the user defined values
 var addressA = document.getElementById('addressA').value;
+
+/////
+var addressB = document.getElementById('addressB').value;
+/////
+
 var radius = parseInt(document.getElementById('radius').value) * 1000;
 // get the selected type
 selectedTypes = [];
