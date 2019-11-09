@@ -1,15 +1,26 @@
-describe("Calculator", function() {
-    describe("Addition function", function() {
-        it("should return 42", function() {
-            expect(addition(20, 22)).toBe(42);
-        });
+var geocoder;
 
-        it("should return 26", function() {
-            expect(addition(7, 19)).toBe(26);
-        });
+beforeEach(function() {
+    var constructorSpy = spyOn(google.maps, 'Geocoder');
+    geocoder = jasmine.createSpyObj('Geocoder', ['geocode']);
 
-        it("should return an error if we don't supply two numbers", function() {
-            expect(addition("Hitchhikers", "Guide")).toBe("Error!")
-        });
+    constructorSpy.and.returnValue(geocoder);
+});
+
+it('returns an error if the data service returns no results', function(done) {
+    var location = 'some location value';
+    geocoder.geocode.and.callFake(function(request, callback) {
+        callback([], google.maps.GeocoderStatus.ZERO_RESULTS);
     });
+
+    // Act
+    var result = geocodeLocation(location);
+
+    // Assert
+    expect(geocoder.geocode).toHaveBeenCalled();
+    var lastCall = geocoder.geocode.calls.mostRecent();
+    var args = lastCall.args[0];
+    expect(args.address).toEqual(location);
+
+    result.fail(done);
 });
