@@ -1,3 +1,104 @@
+<script>
+
+import { jquery } from "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+var map;  // Refactor to either be initialized or passed as an argument where needed
+const COUNTRY_RESTRICT = {
+  'country': 'in'
+};  // global CONSTANT
+
+$(document).ready(function() {
+  // type_holder
+  // <div><label><input type="checkbox" class="types" value="mosque"
+  // />Mosque</label></div>
+  var types = [
+    'amusement_park',
+    'aquarium',
+    'art_gallery',
+    'bar',
+    'book_store',
+    'bowling_alley',
+    'bus_station',
+    'cafe',
+    'casino',
+    'church',
+    'department_store',
+    'gym',
+    'hindu_temple',
+    'library',
+    'lodging',
+    'mosque',
+    'movie_theater',
+    'museum',
+    'night_club',
+    'park',
+    'restaurant',
+    'shopping_mall',
+    'spa',
+    'stadium',
+    'synagogue',
+    'taxi_stand',
+    'train_station',
+    'university',
+    'zoo'
+  ];
+  var html = '';
+  $.each(types, function(index, value) {
+    var name = value.replace(/_/g, ' ');
+    var name_first_letter_capitalized =
+        name.charAt(0).toUpperCase() + name.substr(1);
+    html += `
+        <div>
+          <label>
+          <input type="checkbox" class="types" value="${value}"/>
+          ${name_first_letter_capitalized}
+          </label>
+        </div>
+    `;
+  });
+  $('#type_holder').html(html);
+});
+
+
+function initialize() {
+  var autocomplete = new google.maps.places.Autocomplete(
+      (document.getElementById('addressA')), {
+        types: ['(regions)'],
+        // componentRestrictions: COUNTRY_RESTRICT
+      });
+  var autocomplete2 = new google.maps.places.Autocomplete(
+      (document.getElementById('addressB')), {
+        types: ['(regions)'],
+        // componentRestrictions: COUNTRY_RESTRICT
+      });
+  var default_location = new google.maps.LatLng(53.3360, -2.2081);
+  map = new google.maps.Map(
+      document.getElementById('map'), {center: default_location, zoom: 4});
+}
+///////////////////////////////////////////////////////////////////////////////////
+
+function renderMap() {
+  // Get the user defined values
+  var addressA = document.getElementById('addressA').value;
+  // console.log("getting address A");
+  // console.log(addressA);
+
+  /////
+  var addressB = document.getElementById('addressB').value;
+  // console.log("getting address B");
+  // console.log(addressB);
+  /////
+
+  var radius = parseInt(document.getElementById('radius').value) * 1000;
+  // get the selected type
+  var selectedTypes = [];
+  // console.log("getting address c");
+
+  $('.types').each(function() {
+    if ($(this).is(':checked')) {
+      selectedTypes.push($(this).val());
+    }
+  });
+
 
   var geocoder = new google.maps.Geocoder();
 
@@ -61,9 +162,32 @@
       alert('Geocode was not successful for the following reason: ' + status);
     }
     /////
-  })
+  });
   ///// end of geocoder function for Address A
 
 
   ///// end of geocoder function for Address B
 }
+
+// end of function **--renderMap--**
+//////////////////////////////////////////////////////////////////////////////
+
+
+function createMarker(place, icon) {
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+    map: map,
+    position: place.geometry.location,
+    icon: {
+      url: icon,
+      scaledSize: new google.maps.Size(20, 20)  // pixels
+    },
+    animation: google.maps.Animation.DROP
+  });
+  var infowindow = new google.maps.InfoWindow();
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent(place.name + '<br>' + place.vicinity);
+    infowindow.open(map, this);
+  });
+}
+
