@@ -30,32 +30,28 @@ The calculation for the midpoint was developed so that other APIs may be used in
 Google API place libraries are currently important to the feature. 
 CSS was kept very basic envisaging it could fit in with any potential customers existing sites. 
 
-Audience
+###Audience
 The initial broad appeal would be a feature within dating sites. 
 The benefits and ease of use could be attractive to businesses, walking/ cycling groups, long distance friendships, families or anyone who does not feel comfortable imposing their choice of venue on another person. 
 
 ##UX
-    The strategy plane:. The aim is to create a feature for a dating website that is useful and fun. 
-    When the user wonders Do I like being in here?", "Is it a place I want to return to?". Their answer will be Yes and Yes because the feature is memorable and takes the responsibility away from people to chose a perfect venue. The random 'fate driven' selection by google API makes it exciting. 
+###The strategy plane:. The aim is to create a feature for a dating website that is useful and fun. 
+    The random 'fate driven' selection by google API makes it exciting. When the map midpoint is populated with potential meetup venues it creates a positive feeling. 
 
 
-    The scope plane:. The scope was to 
+    The scope plane:. The scope was to develop a one page feature to present meeting places to the user, halfway between two starting points. 
 
     The Structure plane:. Considering IA- Information Architecture 
-    A well-organized website is intuitive and easy to use. The one page site was set out with clear conceptual section hierarchy of what be most important to the user. 
+    The meet me halfway feature will be intuitive and easy to use. The carousel images are meant to intrigue the user and flow easily to the idea immediately below. 
 
-
-    The Skeleton plane:. The  will be a one page site. 
+    The Skeleton plane:. The  will be a one page feature to be housed in any site that would benefit from the functionality. 
 
     The Surface plane:.
-
     Images of happiness and connection pre-empt the main feature so that the functionality does not appear sterile. 
     Fonts used are easy to read, up to date choices.
 
-    The surface layout is in line with what is currently comfortable, easily absorbed and familiar to users.
-## responsive design
-developed mobile first bootstrap grid system then implemented to use the 
-Wireframes
+    Responsive design was considered throughout and developed with mobile first approach.
+##Wireframes
 
 Wireframe mockups:
 
@@ -74,8 +70,7 @@ Feature to add
 CSS classes have been added ready to style to match any dating site wanting to use the meet me halfway feature.
 >>>>>>>
 >>>>>>>
-Footer
-Home Link to the home part of the page. Social media link via font awesome icons.
+
 
 Future Features
 Different distance calcs
@@ -109,9 +104,6 @@ https://developers.google.com/maps/documentation/javascript/tutorial
 - This was used to help style the website and as well as the grid layout.
 
 -Font Awesome -https://fontawesome.com/ -(src://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900|Audiowide|Ubuntu&display=swap - This was used to create a choice of fonts for the website) -(src=://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css - This was used for icons e.g. social media and flags )
-
->>>>>>>>>>>>>-Hover
-- https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css - This was used to have the hover styles run smoothly
 
 -Gimp- This was used for resizing, cropping, fading and changing images to fit the site.
 
