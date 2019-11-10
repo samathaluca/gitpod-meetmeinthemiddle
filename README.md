@@ -1,40 +1,38 @@
-README.md
-VIEW WEBSITE AT GIT PAGES FOLLOWING LINK >>>>>>>>>>>MEET ME HALWAY LINK>>>>>>>>>>
 
-#Meet/Me halfway dating site feature.
+VIEW WEBSITE FEATURE **MEET ME HALFWAY** AT GIT PAGES, FOLLOWING LINK >>>>>>>>>>>MEET ME HALWAY LINK>>>>>>>>>>
 
-⋅⋅*The Meet/Me halfway feature calculates the midpoint between two addresses inputted by the user.
-⋅⋅*A local map around said meeting point is populated with meeting place, the types of which are chosen by the user, from a list of options. 
-⋅⋅*The user chooses the distance (in KM) from the midpoint that they wish to be displayed.  
+#**MEET ME HALFWAY**- the new dating site feature.
 
-First , using the google API to calculate the midpoint between locations based on their longitudes and latitudes, the
-code will then populate the map with destinations based on the user's preference. The user may choose to meet from a list of google API place types,for example, a bar, cafe, bookshop or a church within
-an area (in KM) decided by the user.
+>The Meet/Me halfway feature calculates the midpoint between two towns or cities inputted by the user.
+>The user chooses the types of meeting place they prefer using checkboxes.
+>The user chooses the distance (in KM) from the midpoint that they wish to be displayed. 
+
+##Project purpose
+>A local map around the calculated midpoint, is populated with suggested meeting places, the types of which are chosen by the user, from a list of options. The purpose being it takes responsibility and stress away from the date by choosing a meeting point narrowed down to the randomly generated venues brought up on the map. 
 
 #Quick Guide
 
 ##The user types in
-1. Address 1- The user's starting point- user's nearest town.
-2. Address 2- The starting point, also in the form of a town, of the person they are meeting.
+1. Town or city 1- The user's starting point- user's nearest town.
+2. Town or city 2 - The starting point, also in the form of a town, of the person they are meeting.
 3. Their choice of types of places to meet are selected using checkboxes.
 4. The user clicks a show button.
 5. Reset clears user input. 
    
 ##Results shown
-   1. A selection of places the user chose are marked on the map around the midpoint, exactly halfway between the two addresses supplied by the user..
-
-
-The simplest solution to this was a mathmatical calculation using the two longitudinal and two latitudinal stating points.
+   1. A selection of places the user chose are marked on the map around the midpoint, exactly halfway between the two addresses supplied by the user.
 
 
 #Getting Started
-Bootstrap documentation was used to develop html, css and javascript.
-The use of jquery was resourced from examples in Bootstrap, W3schools and Code institute modules.
-The Javascript code was developed using google developer documentation.
-https://developers.google.com/maps/documentation/javascript/tutorial
+A simple HTML bootstrap grid and component design was developed to aid mobile first responsive design.
+The Google Maps JavaScript API was implemented to customize maps with content and imagery for display on web pages and mobile devices. The Maps JavaScript API feature chosen was the basic road map type. Geocode within the API translated the towns position to a float number which was used as the basis of a mathematical calculation.
+The calculation for the midpoint was developed so that other APIs may be used in the future, for example ordnance survey maps or hiking/cycling map APIs. 
+Google API place libraries are currently important to the feature. 
+CSS was kept very basic envisaging it could fit in with any potential customers existing sites. 
 
-
-
+Audience
+The initial broad appeal would be a feature within dating sites. 
+The benefits and ease of use could be attractive to businesses, walking/ cycling groups, long distance friendships, families or anyone who does not feel comfortable imposing their choice of venue on another person. 
 
 ##UX
     The strategy plane:. The aim is to create a feature for a dating website that is useful and fun. 
@@ -62,7 +60,7 @@ Wireframes
 Wireframe mockups:
 
 ![Desktop wireframe](balsamiq/Desktop.png)
-![Mobile wireframe](balsamiq/Mobile.pngMobile.png)
+![Mobile wireframe](balsamiq/Mobile.png)
 ![Tablet wireframe](balsamiq/Tablet.png)
 
 >>>>>>>>>>>>
@@ -71,6 +69,9 @@ Features
 Existing Features
 Bootstrap navbar linking to each section of the site. The one page project has a section focusing on
 
+Feature to add
+
+CSS classes have been added ready to style to match any dating site wanting to use the meet me halfway feature.
 >>>>>>>
 >>>>>>>
 Footer
@@ -88,6 +89,15 @@ A message to thank the customer ---
 More understanding of the latest GDPR legislation will be considered for future contact form development. If too many false enquiries are made reCAPTCHA would be set up. The current contact form encourages brief messages with the goal of increasing the number of users prepared to make the effort of completing it.
 
 Tech Used
+First , using the google API to calculate the midpoint between locations based on their longitudes and latitudes, the
+code will then populate the map with destinations based on the user's preference. The user may choose to meet from a list of google API place types,for example, a bar, cafe, bookshop or a church within
+an area (in KM) decided by the user.
+
+The use of jquery was resourced from examples in Bootstrap, W3schools and Code institute modules.
+The Javascript code was developed using google developer documentation.
+https://developers.google.com/maps/documentation/javascript/tutorial
+
+
 -Cloud9, AWS, AWS-educate Visual studio code and Gitpod were all- IDE used throughout development.
 
 -HTML - This was used to create the markupl
