@@ -61,9 +61,9 @@ Wireframes
 
 Wireframe mockups:
 
-![Desktop wireframe](Desktop.png)
-![Mobile wireframe](Mobile.png)
-![Tablet wireframe](Tablet.png)
+![Desktop wireframe](balsamiq/Desktop.png)
+![Mobile wireframe](balsamiq/Mobile.pngMobile.png)
+![Tablet wireframe](balsamiq/Tablet.png)
 
 >>>>>>>>>>>>
 
