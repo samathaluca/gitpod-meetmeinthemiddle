@@ -3,7 +3,9 @@ body {
         font-family: Roboto;
         margin-left: 20px;
         margin-right: 20px;
+        /* background-image: url("assets/images/2.jpg"); */
+       
         background-color: #CCCCCC;
-        background-image: url("assets/images/back.jpg");
+        /* background-image: url("images/back.jpg"); */
         /* background-color: #E2DDB5; */
     }
