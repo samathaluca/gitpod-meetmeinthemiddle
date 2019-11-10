@@ -61,6 +61,10 @@ Wireframes
 
 Wireframe mockups:
 
+![Desktop wireframe](Desktop.png)
+![Mobile wireframe](Mobile.png)
+![Tablet wireframe](Tablet.png)
+
 >>>>>>>>>>>>
 
 Features
@@ -90,6 +94,7 @@ Tech Used
 
 -CSS - This was used to style the elements of the HTML code.
 >>>>>>>>>>>>>
+[samsi](https://www.samsi.co.uk)
 -Bootstrap - https://getbootstrap.com/docs/4.3/getting-started/introduction/ - (src=://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css)
 - This was used to help style the website and as well as the grid layout.
 
