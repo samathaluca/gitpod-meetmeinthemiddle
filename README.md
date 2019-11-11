@@ -141,7 +141,13 @@ ALL THE LINKS ON THE SITE AND CONTACT FORM were tested throughout. Contact form 
 Final tests were made using AutoPrefixer This project used AutoPrefixer to make sure the css code is valid for all browsers. I also loaded the site in each of the following browsers. Google Chrome Bing Ask Jeeves Safari Internet Explorer Mozilla Firefox
 
 Final Google Developer Tools texts completed for all screen sizes.
-![Jasmine](Jasmine.pdf)
+
+![Jasmine](Jasmine.jpg)
+
+
+
+
+
 ## COMPATIBILITY
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in both desktop and mobile configuration.
 
