@@ -142,7 +142,7 @@ Final tests were made using AutoPrefixer This project used AutoPrefixer to make 
 
 Final Google Developer Tools texts completed for all screen sizes.
 
-![Jasmine](assets/jasmine.jpg)
+![Jasmine](assets/testing/jasmine.jpg)
 
 
 
