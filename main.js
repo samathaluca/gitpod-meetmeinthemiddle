@@ -149,14 +149,14 @@ function renderMap() {
         /////
         else {
           alert(
-              'Geocode was not successful for the following reason: ' + status);
+              'Double check that you have filled in all the options: ' + status);
         }
         /////
       });
     }
     /////
     else {
-      alert('Geocode was not successful for the following reason: ' + status);
+      alert('Double check that you have filled in all the options: ' + status);
     }
     /////
   });
