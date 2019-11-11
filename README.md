@@ -1,7 +1,7 @@
-T0 VIEW WEBSITE FEATURE **MEET ME HALFWAY** AT GIT PAGES 
-[Link to Milestone project 2](https://samathaluca.github.io/gitpod-meetmeinthemiddle/)
+T0 VIEW WEBSITE APPLICATION **MEET ME HALFWAY** AT GIT PAGES follow
+[LINK TO MILESTONE PROJECT 2](https://samathaluca.github.io/gitpod-meetmeinthemiddle/)
 
-#The new dating site feature.
+# The new dating site feature.
 **MEET ME HALFWAY**- 
 
 
@@ -9,34 +9,34 @@ T0 VIEW WEBSITE FEATURE **MEET ME HALFWAY** AT GIT PAGES
 - The user chooses the distance (in KM) around the midpoint that they wish to be displayed. 
 - The user can choose the types of meeting place they prefer using checkboxes.
 
-##Project brief
+## Project brief
 Develop a dynamic Front End Project: Written using custom JavaScript, HTML and CSS code creating a front-end web application consisting of one HTML pages with significant interactive functionality.
 Site Responses: JavaScript has been used to produce relevant responses dependent on users' actions.
 
 
-##Project purpose
+## Project purpose
 The aim was to create a feature for a dating website that is useful and fun. 
 The 'fate driven' selection of first date meeting point is generated randomly making it exciting. When the map midpoint is populated with potential meetup venues it creates a positive feeling. 
 The purpose takes responsibility and stress away from the date by choosing a meeting point narrowed down to the randomly generated venues brought up on the map. 
 
 A local map around the calculated midpoint, is populated with suggested meeting places, the types of which are chosen by the user, from a list of options. 
 
-##Information Architecture: The layout is structured using Bootstrap grid and components to ensure that application is fully responsive. Design was done considering mobile first approach. 
+## Information Architecture: The layout is structured using Bootstrap grid and components to ensure that application is fully responsive. Design was done considering mobile first approach. 
 
-#Quick Guide
-##The user is prompted to input:-
+# Quick Guide
+## The user is prompted to input:-
 1. Town or city 1- The user's starting point- user's nearest town.
 2. Town or city 2 - The starting point, also in the form of a town, of the person they are meeting.
 3. Their choice of types of places to meet are selected using checkboxes.
 4. The user clicks a show button.
 5. Reset clears user input. 
    
-##Results shown
+## Results shown
    1. A selection of places that the user has chosen are marked on the map around the midpoint, exactly halfway between the two addresses supplied by the user.
    2. If the user does not complete the necessary information an alert box asks the user to *"Double check that you have filled in all the options: INVALID_REQUEST"*
 
-##UX
-###Audience
+## UX
+### Audience
 The initial broad appeal would be a feature within dating sites. 
 The benefits and ease of use could be attractive to businesses, walking/ cycling groups, long distance friendships, families or anyone who don't want to negotiate where to meet. 
 
@@ -51,7 +51,7 @@ Fonts used are easy to read, up to date choices.
 
 Responsive design was considered throughout and developed with mobile first approach.
 
-###Framework
+### Framework
 
 Getting Started
 
@@ -61,7 +61,7 @@ The calculation for the midpoint was developed so that other APIs may be used in
 Google API place libraries are currently important to the feature. 
 CSS was kept very basic envisaging it could fit in with any potential customers existing sites. 
 
-##Wireframes
+## Wireframes
 
 Wireframe mockups were designed using Balsamiq:
 
@@ -70,28 +70,28 @@ Wireframe mockups were designed using Balsamiq:
 ![Tablet wireframe](balsamiq/Tablet.png)
 
 
-##Features
-###Existing Features
+## Features
+### Existing Features
 
 
 Carousel of dating images and straplines.
 Form for user preference input.
 Google map.
 >>>>>>>
-###Feature to add
+### Feature to add
 CSS classes have been added ready to style to match any dating site wanting to use the meet me halfway feature.
 >>>>>>>
-###Future Features
+### Future Features
 Different distance calcs
 2/1 welcome frink at chosen venues
 who pays coin flip. 
 if you travel 2/3 you pay 1/3 and visa versa.
-###Features Left to Implement.
+### Features Left to Implement.
 A message to thank the customer ---
 
 More understanding of the latest GDPR legislation will be considered for future contact form development. If too many false enquiries are made reCAPTCHA would be set up. The current contact form encourages brief messages with the goal of increasing the number of users prepared to make the effort of completing it.
 
-##Tech Used
+## Tech Used
 [HTML5](https://en.wikipedia.org/wiki/HTML5)Semantic markup language as the shell of the site.
 [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)This was used to style the elements of the HTML code.
 [JAVASCRIPT](https://www.javascript.com/)Primary function of the site for all user interaction.
@@ -121,12 +121,12 @@ https://developers.google.com/maps/documentation/javascript/tutorial
 
 
 
-##Testing
+## Testing
 HTML and CSS validators were used throughout development.
 [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
 [HTML Validator](https://validator.w3.org/)
 [CSS VALIDATOR](https://jigsaw.w3.org/css-validator/)
-
+[HTML AND CSS Beautifier](https://www.freeformatter.com/html-formatter.html)
 [Javascript Validator](http://beautifytools.com/javascript-validator.php)
 [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
 [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
@@ -144,7 +144,7 @@ Final tests were made using AutoPrefixer This project used AutoPrefixer to make 
 
 Final Google Developer Tools texts completed for all screen sizes.
 
-##COMPATIBILITY
+## COMPATIBILITY
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in both desktop and mobile configuration.
 
 Chrome v.70
@@ -155,24 +155,24 @@ Opera v.56
 Internet Explorer v.11
 NOTED ISSUES
 
-###Devices tested
+### Devices tested
 Mobile phones- Samsung S9, Iphone 6, Iphone 7S, Sony Xseries
 Tablets tested - Ipad
 Laptop tested - MacBook pro, Sony Vaio
 Desktop (unbranded Windows 7 OS) with different monitors 21, 27 and 43inches.
 
-##Version control
+## Version control
 Each significant change was saved in git repository. 
 Attention was given to the commit messages to ensure I could find previous versions if any problems began to arise.
 Check the git status to double-check that they've been added
 git status
-
+https://github.com/samathaluca/gitpod-meetmeinthemiddle
 >>>>>>>>>>>>>>>>>>
 Add a remote
 git remote add origin https://github.com/samathaluca/ticketsales.git
 Final Project version control
 
-##Deployment
+## Deployment
 This project was mostly developed using gitpod and Visual studio code, committed to git and pushed to GitHub using the built in function within Gitpod and the Git desktop linked to VSC. T
 
 
@@ -186,10 +186,10 @@ The URL I was given was deployed project
 
 https://samathaluca.github.io/gitpod-meetmeinthemiddle/
 
-##Content
+## Content
 The photos used in this site were obtained from google images and pixabay
 
-##Reference
+## Reference
 google developer documentation. https://developers.google.com/maps/documentation/javascript/tutorial
 students work benhassell....
 
