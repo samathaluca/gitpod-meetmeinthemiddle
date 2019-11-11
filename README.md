@@ -2,9 +2,7 @@ T0 VIEW WEBSITE APPLICATION **MEET ME HALFWAY** AT GIT PAGES follow
 [LINK TO MILESTONE PROJECT 2](https://samathaluca.github.io/gitpod-meetmeinthemiddle/)
 
 # The new dating site feature.
-**MEET ME HALFWAY**- 
-
-
+**MEET ME HALFWAY**
 - The Meet Me halfway application calculates the midpoint between two towns or cities inputted by the user.
 - The user chooses the distance (in KM) around the midpoint that they wish to be displayed. 
 - The user can choose the types of meeting place they prefer using checkboxes.
@@ -16,12 +14,12 @@ Site Responses: JavaScript has been used to produce relevant responses dependent
 
 ## Project purpose
 The aim was to create a feature for a dating website that is useful and fun. 
-The 'fate driven' selection of first date meeting point is generated randomly making it exciting. When the map midpoint is populated with potential meetup venues it creates a positive feeling. 
+A local map is displayed around a calculated midpoint (between two towns) and populated with suggested meeting places, the types of which are chosen by the user, from a list of options.
+The 'fate driven' selection of first date meeting point is generated randomly. When the map midpoint is populated with potential meetup venues it creates a positive feeling. 
 The purpose takes responsibility and stress away from the date by choosing a meeting point narrowed down to the randomly generated venues brought up on the map. 
 
-A local map around the calculated midpoint, is populated with suggested meeting places, the types of which are chosen by the user, from a list of options. 
-
-## Information Architecture: The layout is structured using Bootstrap grid and components to ensure that application is fully responsive. Design was done considering mobile first approach. 
+## Information Architecture 
+The layout is structured using Bootstrap grid and components to ensure that application is fully responsive. Design was done considering mobile first approach. 
 
 # Quick Guide
 ## The user is prompted to input:-
@@ -143,7 +141,7 @@ ALL THE LINKS ON THE SITE AND CONTACT FORM were tested throughout. Contact form 
 Final tests were made using AutoPrefixer This project used AutoPrefixer to make sure the css code is valid for all browsers. I also loaded the site in each of the following browsers. Google Chrome Bing Ask Jeeves Safari Internet Explorer Mozilla Firefox
 
 Final Google Developer Tools texts completed for all screen sizes.
-
+![Jasmine](Jasmine.pdf)
 ## COMPATIBILITY
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in both desktop and mobile configuration.
 
