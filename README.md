@@ -158,12 +158,15 @@ A colourful poor resolution image of choice was replaced by a better quality ima
 4. HTML Validator
  Known error of bar pipe between fonts in googleapi is not necessary to change.
  Validator showed an error suggesting I move a </div> before a </form> tag in previous test. This time the error suggests I need to revert the change to how it had been previously. As the bootstrap grid becomes less responsive if I do reverse the previous change I have left it.
-5. Markdown live
-  preview yet to be used.
+5. Markdown live preview. Readme.md file all checked.
 6. CSS beautifier and validator
 No changes needed
 7. Autoprefixer test run.
 No prefixes needed. 
+8. Slack request for other students to preview and test the deployed site revealed a problem
+A fellow student noticed that the type of meeting place selection had been broken during the final amendment and testing process. When she selected bars, accommodation was shown on the map instead. 
+Previous versions were referred to and the changes to variable types to the clearer meetingplace_types suggested by my mentor was reverted. The word type is thought to have special meaning when using  google maps API place library.
+Corrections were made. Correct type selection now populates the map again. 
 
 
 ### Compatibility
@@ -182,10 +185,23 @@ NO ISSUES
 
 ### Devices tested
 
-Mobile phones- Samsung S9, Iphone 6/7/7S plus, Sony XA42
-Tablets tested - Ipad, LNBEI 10 inch Android tablet
-Laptop tested - MacBook pro, Sony Vaio
-Desktop (unbranded Windows 7 OS) with different monitors 21 and 27inch.
+#### Mobile phones
+
+1. Samsung S9, 
+2. Iphone 6/7/7S plus, 
+3. Sony XA42
+   
+#### Tablets tested 
+1. Ipad 
+2. LNBEI 10 inch Android tablet
+   
+#### Laptop tested 
+1. MacBook pro, 
+2. Sony Vaio
+   
+#### Desktop 
+
+1. (unbranded Windows 7 OS) with different monitors 21 and 27inch.
 
 ## Version control
 
@@ -221,12 +237,17 @@ Student projects recommended by tutor support included https://benhasselgren.git
 I used this project for CSS ideas. Notably map dimensions that worked responsively.
 
 
-## Credits and Attribution: https://developers.google.com/maps/documentation/javascript/tutorials were the backbone of the project.
+## Credits and Attribution
+https://developers.google.com/maps/documentation/javascript/tutorials were the backbone of the project.
 
 My Mentor Brian Macharia helped with a callback issue that I had not been able to solve. The show button always need to be double clicked to show the midpoint and load the places. 
 Brian advised me that the asynchronicity of my javascript code was an issue. This meant that the page was loading before the results could be calculated and displayed. The calculation was effectively completed too late so that the page was always displaying the previous out dated requests to the google maps API. 
 Restructuring my code and removing the callback meant up to date responses to user input are loaded each time. 
-Tutor support, most recently Tim trying to help me get to grips with test driven development and subjective discussions around CSS. 
+Tutor support, most recently Tim trying to help me get to grips with test driven development and subjective discussions around CSS.
+
+A grateful acknowledgement of Edel Sullivan's help in Slack. She noticed that when she selected bars in cork, she was presented with accommodation. I was able to correct this before submission. 
+
+## Submission 
 
 Before submission I have filled in the pre-submission check list plus I have checked each of the following aspects of the project.
 
