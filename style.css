@@ -1,52 +1,68 @@
 body {
-        font: 400 15px/1.8;
-        font-family: Roboto;
-        /* font-family: "Lato", cursive; */
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 30px;
-        margin-bottom: 75px;
-        background-color: #ffe6e8;
-        /* background-color: #E2DDB5; */
-    }
-h1    {
-        font-family: 'Righteous', cursive;
-        color: blueviolet;
-        margin-bottom: 40px;
+	font: 400 15px/1.8;
+	font-family: Roboto;
+	/* font-family: "Lato", cursive; */
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 75px;
+	background-color: #ffe6e8;
+	/* background-color: #E2DDB5; */
 }
 
+h1 {
+	font-family: 'Righteous', cursive;
+	color: blueviolet;
+	margin-bottom: 40px;
+}
+
+
+/* mentor suggested a border for the map section. I prefer it without
+#section-border {
+  border: 5px solid navy;
+} */
+
+<!-- 
+
+#map {
+   height: 600px;
+   margin-bottom: 15px;
+} -->
+
+
 /* Although mobile first design was used throughout. Testing on different smaller devices and with google Devtools revealed the need to remove text over images */
-    @media only screen and (max-width: 700px) {
-      h3 {
-        display: none;
-      }
-    }
 
-    @media only screen and (max-width: 500px) {
-      .carousel-indicators {
-        display: none;
-      }
-    }
+@media only screen and (max-width: 700px) {
+	h3 {
+		display: none;
+	}
+}
 
-    @media only screen and (max-width: 333px) {
-      p {
-        display: none;
-      }
-    }
+@media only screen and (max-width: 500px) {
+	.carousel-indicators {
+		display: none;
+	}
+}
 
-    
-    @media only screen and (min-width: 666px) {
-      #lowres-image {
-        display: none;
-      }
-    }
+@media only screen and (max-width: 333px) {
+	p {
+		display: none;
+	}
+}
 
-    @media only screen and (max-width: 667px) {
-      #XL-image {
-        display: none;
-      }
-    }
-    
+@media only screen and (min-width: 666px) {
+	#lowres-image {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	#XL-image {
+		display: none;
+	}
+}
+
+
     
     
 
