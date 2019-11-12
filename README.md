@@ -35,9 +35,19 @@ The layout is structured using Bootstrap grid and components to ensure that appl
 A simple HTML bootstrap grid and component design was developed considering mobile first, responsive design.
 The Google Maps JavaScript API was implemented to customize maps with content and imagery for display on mobile, tablet and desktop devices. The Maps JavaScript API feature chosen was the basic road map type. 
 Geocode within the API translated the towns position to a float number which was used as the basis of a mathematical calculation.
+
+
+```var selLocLatB = results[0].geometry.location.lat();
+          var selLocLngB = results[0].geometry.location.lng();
+
+          var MidLat = (selLocLatA + selLocLatB) / 2;
+          console.log('MidLat: ' + MidLat);
+          var MidLng = (selLocLngA + selLocLngB) / 2;```
+
+
 The calculation for the midpoint was developed so that other APIs may be used in the future, for example ordnance survey maps or hiking/cycling map APIs. 
 Google API place libraries are currently important to the feature. 
-CSS was kept very basic envisaging it could fit in with any potential customers existing sites.
+
 ## UX
 ### Planning and design
 - The strategy plane: To attract users to a website, for example, a dating site. 
@@ -48,19 +58,20 @@ CSS was kept very basic envisaging it could fit in with any potential customers 
   The **MEET ME HALFWAY** application will be intuitive and easy to use. The carousel images are meant to invite the user and flow easily to the interactive idea immediately below. 
 - The Skeleton plane: A one page  to be housed in any site that would benefit from the functionality. 
   The skeleton was designed to optimize the arrangement of elements for maximum effect and efficiency
-- The Surface plane: Images of happiness and connection load above the main feature so that the functionality does     not appear sterile. 
+- The Surface plane: Images of happiness and connection load above the main feature so that the functionality does         not appear sterile. 
   Fonts chosen are easy to read, up to date choices.
-  Colourful images were used to add life to the design. Subtle, soft colours were chosen to complement the images and the loaded map. 
+  Colourful images were used to add life to the design. Subtle, soft colours were chosen to complement the images and the loaded map. Colour scheme research revealed that coral has been the most popular in 2019. Coral did not work well. Pale rose pink was chosen based on feedback by users testing the application on their different devices. 
+  CSS was mainly dependent on Bootstrap envisaging it could fit in with any potential customers existing sites. 
 ### User stories
 #### Audience
 Anyone who wants to arrange to meet someone else half way between two places. 
 The user has enough choice to narrow down the best place to meet someone else. Using the familiarity and comfort of google maps and google maps place library, the **MEET ME HALFWAY** application calculates the midpoint between locations based on two selected towns or cities (converted to longitudinal and latitudinal points), the wide choice of place types are marked on a location map around the midway point. 
 The user may choose to meet from a list of google API place types,for example, a bar, cafe, bookshop or a church within an area (in KM) decided by themselves.
-#### What is the appeal?
+#### What is the benefit?
 The application can prevent obligation, negotiations, awkward expectations and responsibility to fall on one person to suggest a meeting point and venue. There is an element of excitement, a little bit of a gamble and some faith that the right place will be displayed creating interest and memorability.
 #### Why would there be any interest?
 The initial broad appeal would be a feature within dating sites. 
-The benefits and ease of use could be attractive to businesses, walking/ cycling groups, long distance friendships, families or anyone who doesn't want to negotiate where to meet. 
+The benefits and ease of use could be attractive to businesses, walking/ cycling groups, long distance friendships, families or anyone who doesn't want to 'over think' where to meet. 
 
  ## Wireframes
 
@@ -75,11 +86,14 @@ Wireframe mockups were designed using Balsamiq:
 ### Existing Features
 Heading 
 Carousel of dating images and strap lines.
+Jumbotron 
 Form for user preference input.
 Google map.
+Jumbotron
 
 ### Future Features
 Bespoke place markers which recommend some places as romantic or atmospheric  or simply highly rated for first dates based on user feedback. 
+
 
 ## Tech Used
 [HTML5](https://en.wikipedia.org/wiki/HTML5)Semantic markup language as the shell of the site.
@@ -93,6 +107,8 @@ Bespoke place markers which recommend some places as romantic or atmospheric  or
 [VISUAL-STUDIO-CODE](https://code.visualstudio.com/) The IDE used for debugging, embedded git control, git commits, previewing and code development.
 Cloud9, AWS and Gitpod were initially used but Visual studio code became the best choice for the project development. 
 [BEAUTIFY](https://www.freeformatter.com/css-beautifier.html) to check code and improve code readability. 
+[HEX CODES](https://www.w3schools.com/colors/colors_picker.asp) different colours experimentation.
+[BALSAMIQ](https://balsamiq.com/wireframes/)
 
 ## Testing
 HTML and CSS validators were used throughout development.
@@ -104,7 +120,6 @@ HTML and CSS validators were used throughout development.
 [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
 [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
 [JASMINE](https://jasmine.github.io/)
-[balsamiq](https://balsamiq.com/wireframes/)
 
 
 
@@ -124,7 +139,7 @@ I did some Jasmine tests but with the map api it wasn't processing a mock api ca
 
 
 ## COMPATIBILITY
-To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in both desktop and mobile configuration.
+To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in both desktop, tablet and mobile configuration.
 
 Chrome v.70
 Edge v.18
@@ -135,40 +150,39 @@ Internet Explorer v.11
 NO ISSUES
 
 ### Devices tested
-Mobile phones- Samsung S9, Iphone 6, Iphone 7S, Sony Xseries
-Tablets tested - Ipad
+Mobile phones- Samsung S9, Iphone 6/7/7Splus, Sony XA42
+Tablets tested - Ipad, LNBEI 10 inch Android tablet. 
 Laptop tested - MacBook pro, Sony Vaio
-Desktop (unbranded Windows 7 OS) with different monitors 21, 27 and 43inches.
+Desktop (unbranded Windows 7 OS) with different monitors 21 and 27inch.
 
 ## Version control
-Each significant change was saved in git repository. 
-Attention was given to the commit messages to ensure I could find previous versions if any problems began to arise.
+In the early developmental stages of the project the IDE cloud9 I was using was taken over by Amazon. As I attempted to learn which development environment I found most useful, I developed, stored and ran my code locally until I became confident in relying upon Gitpod and Visual Studio Code. This became confusing as I was using different computers and synchronisation was sometimes an issue. After a period of experimentation with Local files, AWS and Gitpod, I now use github desktop combined with Visual Studio code for most commits. I still occasionally work and commit to github from  Gitpod if I need Code institute tutor support. Gitpod allows me to share my code easily. 
+The main.js file versions previously stored locally were pushed to git in order of development with numerical commit messages.
+Each significant change was saved in git repository. https://github.com/samathaluca/gitpod-meetmeinthemiddle
+Attention was given to the commit messages to ensure I could find previous versions if any problems began to arise
 
-https://github.com/samathaluca/gitpod-meetmeinthemiddle
->>>>>>>>>>>>>>>>>>
-
+In summary- This project was mostly developed using local files, then gitpod and finally Visual studio code, committed to git and pushed to GitHub using the built in function within Gitpod and the Git desktop linked to VSC. 
 
 ## Deployment
-This project was mostly developed using gitpod and Visual studio code, committed to git and pushed to GitHub using the built in function within Gitpod and the Git desktop linked to VSC. 
-
 To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
 
 From the list of repositories on the screen I select "samathaluca/gitpod-meetmeinthemiddle" From the menu items near the top of the page, I selected Settings. I scrolled down to the GitHub Pages section. Under Source clicked the drop-down menu labelled None and select Master Branch On selecting Master Branch the page was automatically refreshed amd the website was now deployed. I scrolled back down to the GitHub Pages section to retrieve the link to the deployed website.
 
-The URL I was given was deployed project
-
-https://samathaluca.github.io/gitpod-meetmeinthemiddle/
+The URL I was given for  deployed project is https://samathaluca.github.io/gitpod-meetmeinthemiddle/
 [LINK TO MILESTONE PROJECT 2](https://samathaluca.github.io/gitpod-meetmeinthemiddle/)
 
 
 ## Content
-The photos used in this site were obtained from google images and pixabay
+The photos used in this site were obtained from Google images and Pixabay.
+Google maps are called with an API key. 
 
 ## Reference
-google developer documentation. https://developers.google.com/maps/documentation/javascript/tutorial
-students work benhassell....
+Google developer documentation was the basis of the JAVASCRIPT and JQUERY used. https://developers.google.com/maps/documentation/javascript/tutorial.
 
-Credits
+
+Credits and Attribution: 
+https://developers.google.com/maps/documentation/javascript/tutorials were the backbone of the project.
+
 Mentor helped with callback issue -double click. Knew the asynch was an issue
 Tim's  https://github.com/TravelTimN/ci-milestone02-ifd#testing
 
@@ -201,12 +215,10 @@ Acknowledgments
 Hat tip to anyone whose code was used
 Inspiration
 etc
-
-Attribution: 
-https://developers.google.com/maps/documentation/javascript/tutorial
 The skeleton of the Javascript main.js file was based upon content within the Maps Javascript API and places API documentation. 
 Google suggested using radius to calculate the midpoint but I decided to use the simpler mathematical method. 
 Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
+
 
 
 
