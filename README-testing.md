@@ -2,9 +2,9 @@
 
 [LINK TO MILESTONE PROJECT 2](https://samathaluca.github.io/gitpod-meetmeinthemiddle/)
 
-## A new dating site feature **MEET ME HALFWAY**
+## A new dating site application **MEET ME HALFWAY**
 
-- The Meet Me halfway application calculates the midpoint between two towns or cities inputted by the user.
+- The Meet Me halfway application calculates the midpoint between two towns or cities input by the user.
 - The user chooses the distance (in KM) around the midpoint that they wish to be displayed.
 - The user can choose the types of meeting place they prefer using checkboxes.
 
@@ -139,21 +139,18 @@ Cloud9, AWS and Gitpod were initially used but Visual studio code became the bes
 - [Javascript Validator](http://beautifytools.com/javascript-validator.php)
 - [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
 - [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
-- [JASMINE](https://jasmine.github.io/)
-Cloud9, AWS and Gitpod were initially used but Visual studio code became the best choice for the project development.
+- [JASMINE](https://jasmine.github.io/)- framework for testing javascript code.
 
-<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>
-ALL THE LINKS ON THE SITE AND CONTACT FORM were tested throughout. Contact form required field for email or text type works well. ALL LINKS TESTED to external website links, videos and social media repeatedly tested.
+### Final Testing to demonstrate thorough testing carried out throughout development
 
-Final tests were made using AutoPrefixer This project used AutoPrefixer to make sure the css code is valid for all browsers. I also loaded the site in each of the following browsers. Google Chrome Bing Ask Jeeves Safari Internet Explorer Mozilla Firefox
-
-Final Google Developer Tools texts completed for all screen sizes.
-
+1. Jasmine Test driven development. The final Jasmine test reflected the difficulty using the framework with the google maps API. 
 ![Jasmine](assets/testing/jasmine.jpg)
-
-I did some Jasmine tests but with the map api it wasn't processing a mock api call as intended, and it's something I plan to come back to learn fully when you have more time after the course is complete, but for now you've got a schedule on the course to adhere to.... but still proceed with a large amount of manual tests for sure.
-
- -->
+During development I had used some Jasmine tests but when using the google map api key, Jasmine wasn't processing a mock api call as intended so the tests would not pass either on small sections or the complete javascript file.
+I do see the benefit of TDD and it is something I plan to use more fully in the next project. I was advised that Jasmine is not a requirement for Milestone2 assuming a large number of manual tests were run.
+2. Chrome Developer tools 
+Final error is js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize:70 InvalidValueError: not an instance of HTMLInputElement.
+Google maps is producing an error that does not effect the functionality of the Javascript code long term. I have not rewritten the code because I do not want the application to be dependent on google maps only.
+3. Javascript Validator 
 
 ### COMPATIBILITY
 
@@ -250,3 +247,18 @@ And then you can use that id in css to style the size:
 #map {
    height: 600px;
 } -->
+
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>
+ALL THE LINKS ON THE SITE AND CONTACT FORM were tested throughout. Contact form required field for email or text type works well. ALL LINKS TESTED to external website links, videos and social media repeatedly tested.
+
+Final tests were made using AutoPrefixer This project used AutoPrefixer to make sure the css code is valid for all browsers. I also loaded the site in each of the following browsers. Google Chrome Bing Ask Jeeves Safari Internet Explorer Mozilla Firefox
+
+Final Google Developer Tools texts completed for all screen sizes.
+
+![Jasmine](assets/testing/jasmine.jpg)
+
+I did some Jasmine tests but with the map api it wasn't processing a mock api call as intended, and it's something I plan to come back to learn fully when you have more time after the course is complete, but for now you've got a schedule on the course to adhere to.... but still proceed with a large amount of manual tests for sure.
+
+
+ -->

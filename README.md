@@ -139,7 +139,7 @@ Final Google Developer Tools texts completed for all screen sizes.
 
 
 
-I did some Jasmine tests but with the map api it wasn't processing a mock api call as intended, and it's something I plan to come back to learn fully when you have more time after the course is complete, but for now you've got a schedule on the course to adhere to.... but still proceed with a large amount of manual tests for sure.
+
 
 
 
