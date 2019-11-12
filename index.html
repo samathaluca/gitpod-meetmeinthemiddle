@@ -10,7 +10,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
       <!-- The order of link and script tags appeared to raise conflicts between the bootstrap, jquery and google map API CSS sometimes preventing the map from loading- the current order is reliable-->
-      
    </head>
    <body>
       <div class="container">
@@ -30,15 +29,14 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                <div class="item active">
-                     <img src="assets/images/sign.jpg" alt="where-to-go?" style="width:100%">
-                  
+                  <img src="assets/images/sign.jpg" alt="where-to-go?" style="width:100%">
                   <div class="carousel-caption">
                      <h3>FINDING FUN</h3>
                      <p>All paths could lead to the final destination-EVENTUALLY</p>
                   </div>
                </div>
                <div class="item">
-                     <img src="assets/images/pinkHat.jpg" alt="who to meet?" style="width:100%">
+                  <img src="assets/images/pinkHat.jpg" alt="who to meet?" style="width:100%">
                   <div class="carousel-caption">
                      <h3>BEING OPEN</h3>
                      <p>Who, What, Where?</p>
@@ -111,27 +109,26 @@
                      <label for="radius">Search Radius:</label>
                      <textarea class="form-control" id="radius" placeholder="Distance from midpoint-In KM" rows="1"></textarea>
                   </div>
-               <!-- </form> -->
-               <div>
-                  <h4>Meeting Place selection</h4>
-                  <div id="type_holder" style="height: 200px; overflow-y: scroll;">
+                  <!-- </form> -->
+                  <div>
+                     <h4>Meeting Place selection</h4>
+                     <div id="type_holder" style="height: 200px; overflow-y: scroll;">
+                     </div>
                   </div>
-               </div>
-               <input
-                  type="button"
-                  value="Show"
-                  id="submit"
-                  onclick="renderMap();"
-                  />
-               <input type="reset" value="Reset" />
-            
-          </div>
-         </form>
+                  <input
+                     type="button"
+                     value="Show"
+                     id="submit"
+                     onclick="renderMap();"
+                     />
+                  <input type="reset" value="Reset" />
+            </div>
+            </form>
             <!-- <h4> Map </h4> -->
-         <div class="col-xs-12 col-sm-8 col-md-8 ">
-            <div id="map" style="height:600px"></div>
+            <div class="col-xs-12 col-sm-8 col-md-8 ">
+               <div id="map" style="height:600px"></div>
+            </div>
          </div>
-        </div>
       </section>
       <div class="jumbotron text-center background #000000">
          <h2>PEOPLE MATTER MORE THAN PLACES OR THINGS</h2>

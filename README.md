@@ -126,7 +126,7 @@ Bespoke place markers which recommend some places as romantic or atmospheric  or
 - [VISUAL-STUDIO-CODE](https://code.visualstudio.com/) The IDE used for debugging, embedded git control, git commits, previewing and code development.
 - [BEAUTIFY](https://www.freeformatter.com/css-beautifier.html) to check code and improve code readability.
 - [HEX CODES](https://www.w3schools.com/colors/colors_picker.asp) different colours experimentation.
-- [BALSAMIQ](https://balsamiq.com/wireframes/)
+- [BALSAMIQ](https://balsamiq.com/wireframes/) wireframe design
 
 Cloud9, AWS and Gitpod were initially used but Visual studio code became the best choice for the project development.
 
@@ -147,10 +147,13 @@ Cloud9, AWS and Gitpod were initially used but Visual studio code became the bes
 ![Jasmine](assets/testing/jasmine.jpg)
 During development I had used some Jasmine tests but when using the google map api key, Jasmine wasn't processing a mock api call as intended so the tests would not pass either on small sections or the complete javascript file.
 I do see the benefit of TDD and it is something I plan to use more fully in the next project. I was advised that Jasmine is not a requirement for Milestone2 assuming a large number of manual tests were run.
+I have been working with Tutor Support to try and get Jasmine functioning, but ultimately decided to put it aside temporarily so you can proceed with the course material, and you plan to come back and revisit later.
 2. Chrome Developer tools 
 Final error is js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize:70 InvalidValueError: not an instance of HTMLInputElement.
 Google maps is producing an error that does not effect the functionality of the Javascript code long term. I have not rewritten the code because I do not want the application to be dependent on google maps only.
-3. Javascript Validator 
+3. Javascript Validator
+ 23 errors listed all relating to the validator not recognising how to read built-in variable names. It's a known issue for JS online validators.
+4. HTML Validator
 
 ### COMPATIBILITY
 

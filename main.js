@@ -56,12 +56,12 @@ $(document).ready(function () {
 
 // initialise map and center on latitude and longitude: 53.3360, -2.2081
 function initialize() {
-	var autocomplete = new google.maps.places.Autocomplete(
+	var addressA = new google.maps.places.Autocomplete(
 		(document.getElementById('addressA')), {
 			types: ['(regions)'],
 			// componentRestrictions: COUNTRY_RESTRICT
 		});
-	var autocomplete2 = new google.maps.places.Autocomplete(
+	var addressB = new google.maps.places.Autocomplete(
 		(document.getElementById('addressB')), {
 			types: ['(regions)'],
 			// componentRestrictions: COUNTRY_RESTRICT
