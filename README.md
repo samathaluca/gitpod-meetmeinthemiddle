@@ -43,7 +43,7 @@ Geocode within the API translated the towns position to a float number which was
           var MidLat = (selLocLatA + selLocLatB) / 2;
           console.log('MidLat: ' + MidLat);
           var MidLng = (selLocLngA + selLocLngB) / 2;```
-
+```
 
 The calculation for the midpoint was developed so that other APIs may be used in the future, for example ordnance survey maps or hiking/cycling map APIs. 
 Google API place libraries are currently important to the feature. 
@@ -121,6 +121,13 @@ HTML and CSS validators were used throughout development.
 [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
 [JASMINE](https://jasmine.github.io/)
 
+###Final Tests write up as an example of how I ran test during development. 
+1. ![Jasmine](assets/testing/jasmine.jpg)
+Test driven development was used however for this project the google API key dependency meant it was complex. 
+Structured manual testing was used throughout development. 
+
+
+
 
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -130,7 +137,7 @@ Final tests were made using AutoPrefixer This project used AutoPrefixer to make 
 
 Final Google Developer Tools texts completed for all screen sizes.
 
-![Jasmine](assets/testing/jasmine.jpg)
+
 
 I did some Jasmine tests but with the map api it wasn't processing a mock api call as intended, and it's something I plan to come back to learn fully when you have more time after the course is complete, but for now you've got a schedule on the course to adhere to.... but still proceed with a large amount of manual tests for sure.
 
