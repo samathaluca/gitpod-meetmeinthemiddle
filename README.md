@@ -154,22 +154,27 @@ Google maps is producing an error that does not effect the functionality of the 
 3. Javascript Validator
  23 errors listed all relating to the validator not recognising how to read built-in variable names. It's a known issue for JS online validators.
 4. HTML Validator
+ Known error of bar pipe between fonts in googleapi is not necessary to change.
+ Validator showed an error suggesting I move a </div> before a </form> tag in previous test. This time the error suggests I need to revert the change to how it had been previously. As the bootstrap grid becomes less responsive if I do reverse the previous change I have left it.
+5. Markdown live-preview yet to be used.
+6. CSS changes are to be done. Final CSS tests to be done before submission. 
+
 
 ### COMPATIBILITY
 
-To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in both desktop, tablet and mobile configuration.
+To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration.
 
-Chrome v.70
-Edge v.18
-Firefox v.63
-Safari v.12
-Opera v.56
-Internet Explorer v.11
+Chrome 
+Edge 
+Firefox 
+Safari 
+Opera 
+Internet Explorer 
 NO ISSUES
 
 ### Devices tested
 
-Mobile phones- Samsung S9, Iphone 6/7/7Splus, Sony XA42
+Mobile phones- Samsung S9, Iphone 6/7/7S plus, Sony XA42
 Tablets tested - Ipad, LNBEI 10 inch Android tablet
 Laptop tested - MacBook pro, Sony Vaio
 Desktop (unbranded Windows 7 OS) with different monitors 21 and 27inch.
@@ -195,16 +200,24 @@ The URL I was given for  deployed project is https://samathaluca.github.io/gitpo
 ## Content
 
 The photos used in this site were obtained from Google images and [Pixabay](https://pixabay.com/).
-Google maps are called with an API key.
+Google maps are called with a dedicated API key.
 
 ## Reference
 
 Google developer documentation was the basis of the JAVASCRIPT and JQUERY used. https://developers.google.com/maps/documentation/javascript/tutorial.
+I researched other apps and sites that had the same function. The two I found were (https://www.whatshalfway.com/)
+and https://www.meetways.com/meet-business.
+I studied their code in detail but opted for a different calculation method for midpoint. The google developer documents suggest a method accounting for the curvature of the earth. I wanted to develop a method that would work if I did not want to use google maps api key any longer and could easily translate to other map APIs available in the future.
+Student projects recommended by tutor support included https://benhasselgren.github.io/ifd-milestone-project-pages/.
+I used this project for CSS ideas. 
 
-Credits and Attribution: ttps://developers.google.com/maps/documentation/javascript/tutorials were the backbone of the project.
 
-Mentor helped with callback issue -double click. Knew the asynch was an issue
-Tim's  https://github.com/TravelTimN/ci-milestone02-ifd#testing
+## Credits and Attribution: https://developers.google.com/maps/documentation/javascript/tutorials were the backbone of the project.
+
+My Mentor Brian Macharia helped with a callback issue that I had not been able to solve. The show button always need to be double clicked to show the midpoint and load the places. 
+Brian advised me that the asynchronicity of my javascript code was an issue. This meant that the page was loading before the results could be calculated and displayed. The calculation was effectively completed too late so that the page was always displaying the previous out dated requests to the google maps API. 
+Restructuring my code and removing the callback meant up to date responses to user input are loaded each time. 
+
 
 before submission I have filled in the pre-submission check list plus I have checked each of the following aspects of the project.
 
@@ -228,18 +241,8 @@ Comments.
 Deployment implementation.
 Deployment write-up
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
-The skeleton of the Javascript main.js file was based upon content within the Maps Javascript API and places API documentation.
-Google suggested using radius to calculate the midpoint but I decided to use the simpler mathematical method.
-Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
 
 <!-- 
-
-
-code will then populate the map with destinations based on the user's preference. 
 
 Example:
 <div id="map" style="height:600px"></div>
@@ -250,18 +253,3 @@ And then you can use that id in css to style the size:
 #map {
    height: 600px;
 } -->
-
-
-<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>
-ALL THE LINKS ON THE SITE AND CONTACT FORM were tested throughout. Contact form required field for email or text type works well. ALL LINKS TESTED to external website links, videos and social media repeatedly tested.
-
-Final tests were made using AutoPrefixer This project used AutoPrefixer to make sure the css code is valid for all browsers. I also loaded the site in each of the following browsers. Google Chrome Bing Ask Jeeves Safari Internet Explorer Mozilla Firefox
-
-Final Google Developer Tools texts completed for all screen sizes.
-
-![Jasmine](assets/testing/jasmine.jpg)
-
-I did some Jasmine tests but with the map api it wasn't processing a mock api call as intended, and it's something I plan to come back to learn fully when you have more time after the course is complete, but for now you've got a schedule on the course to adhere to.... but still proceed with a large amount of manual tests for sure.
-
-
- -->
