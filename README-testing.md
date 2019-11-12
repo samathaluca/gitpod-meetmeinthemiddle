@@ -1,4 +1,4 @@
-# T0 VIEW WEBSITE APPLICATION **MEET ME HALFWAY** AT GIT PAGES follow
+# T0 VIEW WEBSITE APPLICATION *MEET ME HALFWAY* AT GIT PAGES follow
 
 [LINK TO MILESTONE PROJECT 2](https://samathaluca.github.io/gitpod-meetmeinthemiddle/)
 
@@ -114,31 +114,33 @@ Bespoke place markers which recommend some places as romantic or atmospheric  or
 
 ## Tech Used
 
-[HTML5](https://en.wikipedia.org/wiki/HTML5)Semantic markup language as the shell of the site.
-[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)This was used to style the elements of the HTML code.
-[JAVASCRIPT](https://www.javascript.com/)Primary function of the site for all user interaction.
-[JQUERY](https://jquery.com/) Used to simplify some of the DOM manipulations.
-[GIMP](https://www.gimp.org/) This was used for formatting images.
-[BOOTSTRAP](https://getbootstrap.com/docs/3.4/) This was used to help style the website and as well as the grid layout.
-[FONT-GOOGLEAPI](https://fonts.google.com/) a collection of interactive application programming interfaces that allow users to use web fonts on their website.
-[GOOGLEMAPS_API](https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize)
-[VISUAL-STUDIO-CODE](https://code.visualstudio.com/) The IDE used for debugging, embedded git control, git commits, previewing and code development.
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)Semantic markup language as the shell of the site.
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)This was used to style the elements of the HTML code.
+- [JAVASCRIPT](https://www.javascript.com/)Primary function of the site for all user interaction.
+- [JQUERY](https://jquery.com/) Used to simplify some of the DOM manipulations.
+- [GIMP](https://www.gimp.org/) This was used for formatting images.
+- [BOOTSTRAP](https://getbootstrap.com/docs/3.4/) This was used to help style the website and as well as the grid layout.
+- [FONT-GOOGLEAPI](https://fonts.google.com/) a collection of interactive application programming interfaces that allow users to use web fonts on their website.
+- [GOOGLEMAPS_API](https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize)
+- [VISUAL-STUDIO-CODE](https://code.visualstudio.com/) The IDE used for debugging, embedded git control, git commits, previewing and code development.
+- [BEAUTIFY](https://www.freeformatter.com/css-beautifier.html) to check code and improve code readability.
+- [HEX CODES](https://www.w3schools.com/colors/colors_picker.asp) different colours experimentation.
+- [BALSAMIQ](https://balsamiq.com/wireframes/)
+
 Cloud9, AWS and Gitpod were initially used but Visual studio code became the best choice for the project development.
-[BEAUTIFY](https://www.freeformatter.com/css-beautifier.html) to check code and improve code readability.
-[HEX CODES](https://www.w3schools.com/colors/colors_picker.asp) different colours experimentation.
-[BALSAMIQ](https://balsamiq.com/wireframes/)
 
 ## Testing
 
-HTML and CSS validators were used throughout development.
-[Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
-[HTML Validator](https://validator.w3.org/)
-[CSS VALIDATOR](https://jigsaw.w3.org/css-validator/)
-[HTML AND CSS Beautifier](https://www.freeformatter.com/html-formatter.html)
-[Javascript Validator](http://beautifytools.com/javascript-validator.php)
-[Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
-[AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
-[JASMINE](https://jasmine.github.io/)
+- [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
+- [HTML Validator](https://validator.w3.org/)
+- [CSS VALIDATOR](https://jigsaw.w3.org/css-validator/)
+- [HTML AND CSS Beautifier](https://www.freeformatter.com/html-formatter.html)
+- [Javascript Validator](http://beautifytools.com/javascript-validator.php)
+- [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
+- [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
+- [JASMINE](https://jasmine.github.io/)
+Cloud9, AWS and Gitpod were initially used but Visual studio code became the best choice for the project development.
 
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>
 ALL THE LINKS ON THE SITE AND CONTACT FORM were tested throughout. Contact form required field for email or text type works well. ALL LINKS TESTED to external website links, videos and social media repeatedly tested.
@@ -168,7 +170,7 @@ NO ISSUES
 ### Devices tested
 
 Mobile phones- Samsung S9, Iphone 6/7/7Splus, Sony XA42
-Tablets tested - Ipad, LNBEI 10 inch Android tablet. 
+Tablets tested - Ipad, LNBEI 10 inch Android tablet
 Laptop tested - MacBook pro, Sony Vaio
 Desktop (unbranded Windows 7 OS) with different monitors 21 and 27inch.
 
@@ -192,8 +194,8 @@ The URL I was given for  deployed project is https://samathaluca.github.io/gitpo
 
 ## Content
 
-The photos used in this site were obtained from Google images and Pixabay.
-Google maps are called with an API key. 
+The photos used in this site were obtained from Google images and [Pixabay](https://pixabay.com/).
+Google maps are called with an API key.
 
 ## Reference
 
@@ -231,7 +233,7 @@ Hat tip to anyone whose code was used
 Inspiration
 etc
 The skeleton of the Javascript main.js file was based upon content within the Maps Javascript API and places API documentation.
-Google suggested using radius to calculate the midpoint but I decided to use the simpler mathematical method. 
+Google suggested using radius to calculate the midpoint but I decided to use the simpler mathematical method.
 Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
 
 <!-- 
