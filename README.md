@@ -167,7 +167,9 @@ No prefixes needed.
 A fellow student noticed that the type of meeting place selection had been broken during the final amendment and testing process. When she selected bars, accommodation was shown on the map instead. 
 Previous versions were referred to and the changes to variable types to the clearer meetingplace_types suggested by my mentor was reverted. The word type is thought to have special meaning when using  google maps API place library.
 Corrections were made. Correct type selection now populates the map again. 
-
+9. Following the loss of functionality during testing, the Javascript Validator results were double checked by loading the main.js file code in to a Static Code Analysis tool for JavaScript (https://jshint.com/)
+10. The deployed project URL was re-tested in all browsers.
+11. Chrome Devtools were checked 
 
 ### Compatibility
 
@@ -270,4 +272,3 @@ Readme file.
 Comments.
 Deployment implementation.
 Deployment write-up
-
