@@ -23,7 +23,7 @@ h1 {
   border: 5px solid navy;*/
 }
 #map {
-   height: 500px;
+    height: 500px;
 } 
 
 /* Although mobile first design was used throughout. Testing on different smaller devices and with google Devtools revealed the need to remove text over images */
