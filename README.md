@@ -167,23 +167,27 @@ No prefixes needed.
 A fellow student noticed that the type of meeting place selection had been broken during the final amendment and testing process. When she selected bars, accommodation was shown on the map instead. 
 Previous versions were referred to and the changes to variable types to the clearer meetingplace_types suggested by my mentor was reverted. The word type is thought to have special meaning when using  google maps API place library.
 Corrections were made. Correct type selection now populates the map again. 
-9. Following the loss of functionality during testing, the Javascript Validator results were double checked by loading the main.js file code in to a Static Code Analysis tool for JavaScript (https://jshint.com/)
+9. JSHint
+Following the loss of meeting place type selection functionality during testing, the Javascript Validator results were double checked by loading the main.js file code in to a Static Code Analysis tool for JavaScript (https://jshint.com/). Warnings resolved by adding /* jshint esversion: 6 */ at start of the script.
 10. The deployed project URL was re-tested in all browsers.
-11. Chrome Devtools were checked 
+11. Chrome Devtools re-tested. 
+Console error referring to innerHMTL resolved. Google maps APi prefers 'input' instead of 'textarea' so wording in the form was changed. 
+12. Final tests completed in all browsers. 
+Final edit after feedback was to remove the purple <h1> colour</h1>. It changed the tone of the site. 
 
 ### Compatibility
 
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration.
-
+Different versions used by friends, family and other students. No issues.
 1. Chrome 
 2. Edge 
 3. Firefox 
 4. Safari 
 5. Opera 
-6. Internet Explorer  . warning in google documentation is as follows: Notice: Support for Internet Explorer 10 will end between November 2019 and May 2020 depending on the release channel or version number you use.
 
-
-NO ISSUES
+6. Internet Explorer. 
+Warning in google documentation is as follows: Notice: Support for Internet Explorer 10 will end between November 2019 and May 2020 depending on the release channel or version number you use. 
+A different map API will need to be used to work in IE. 
 
 ### Devices tested
 

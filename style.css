@@ -13,7 +13,7 @@ body {
 
 h1 {
 	font-family: 'Righteous', cursive;
-	color: blueviolet;
+	/* color: blueviolet; */
 	margin-bottom: 40px;
 }
 
@@ -23,7 +23,7 @@ h1 {
   border: 5px solid navy;*/
 }
 #map {
-    height: 500px;
+    min-height: 500px;
 } 
 
 /* Although mobile first design was used throughout. Testing on different smaller devices and with google Devtools revealed the need to remove text over images */
