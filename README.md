@@ -253,6 +253,8 @@ Tutor support, most recently Tim trying to help me get to grips with test driven
 
 A grateful acknowledgement of Edel Sullivan's help in Slack. She noticed that when she selected bars in cork, she was presented with accommodation. I was able to correct this before submission. 
 
+Acknowledgment to Adam Fowle, a local GCSE/A'level tutor, for the loan of a google API key and confidence building to tackle this project and get to grips with google developer documents. He helped me find my feet and structure earlier versions. We researched the google method of using radius to calculate midpoint then I gained the confidence to use my own method. I decided on using the mathematical method currently in use when he agreed that the google developer recommended method was beneficial for accuracy needed for example, flying drones to a midpoint. Meeting in a bar within a radius, over a relatively small distance, set by the user does not need to account to curvature of the earth. I have worked on the project independently since July and all work and amendments since July have been my own. Adam helped me set the early foundation for the project during tutor sessions and choose between the different project options. I started the simon game project too before settling in to this project. 
+
 ## Submission 
 
 Before submission I have filled in the pre-submission check list plus I have checked each of the following aspects of the project.
