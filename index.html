@@ -13,7 +13,7 @@
       <!-- The order of link and script tags appeared to raise conflicts between the bootstrap, jquery and google map API CSS sometimes preventing the map from loading- the current order is reliable-->
    </head>
    <body>
-      <div class="container">
+      <section class="container">
          <h1>First Date Planner</h1>
          <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Carousel image number Indicators- subjective and optional-->
@@ -80,7 +80,7 @@
                   </div>
                </div>
             </div>
-            <!-- Left and right controls -->
+            <!-- Left and right controls for carousel images -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
@@ -90,13 +90,14 @@
             <span class="sr-only">Next</span>
             </a>
          </div>
-      </div>
+      </section>
       <div class="jumbotron text-center background #000000">
          <h2>Designer Date</h2>
          <h4>Chosen by Fate</h4>
       </div>
-      <section id="section-border" class="container-fluid">
-         <div class="row" style="height:600px">
+      <!-- user input section -->
+      <section class="container-fluid">
+         <div id="section-height" class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 filter-column">
                <form>
                   <div class="form-group">
@@ -111,7 +112,6 @@
                      <label for="radius">Search Radius:</label>
                      <textarea class="form-control" id="radius" placeholder="Distance from midpoint-In KM" rows="1"></textarea>
                   </div>
-                  <!-- </form> -->
                   <div>
                      <h4>Meeting Place selection</h4>
                      <div id="type_holder" style="height: 200px; overflow-y: scroll;">
@@ -126,9 +126,9 @@
                   <input type="reset" value="Reset" />
             </div>
             </form>
-            <!-- <h4> Map </h4> -->
+            <!-- google map -->
             <div class="col-xs-12 col-sm-8 col-md-8 ">
-               <div id="map" style="height:600px"></div>
+               <div id="map"></div>
             </div>
          </div>
       </section>
@@ -136,7 +136,6 @@
          <h2>PEOPLE MATTER MORE THAN PLACES OR THINGS</h2>
          <h4>Human connection is an antidote to many illnesses- check the research</h4>
       </div>
-      <!-- <h1 id="social-media">time to trust</h1> -->
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNne6TTHmVK0n_fL0ogNWkvNwDTdf9lsI&libraries=places&callback=initialize"></script>
       <script src="main.js"></script>
    </body>

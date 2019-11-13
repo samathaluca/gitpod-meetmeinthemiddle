@@ -1,13 +1,14 @@
+/* Planned design was to keep the application simple to avoid confusion and clutter distracting from the functionality */
+
 body {
 	font: 400 15px/1.8;
 	font-family: Roboto;
-	/* font-family: "Lato", cursive; */
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 30px;
 	margin-bottom: 75px;
 	background-color: #ffe6e8;
-	/* background-color: #E2DDB5; */
+	
 }
 
 h1 {
@@ -16,19 +17,14 @@ h1 {
 	margin-bottom: 40px;
 }
 
-
-/* mentor suggested a border for the map section. I prefer it without
-#section-border {
-  border: 5px solid navy;
-} */
-
-<!-- 
-
+#section-height {
+	height:550px;
+/* mentor suggested a border for the map section. Tested. 
+  border: 5px solid navy;*/
+}
 #map {
-   height: 600px;
-   margin-bottom: 15px;
-} -->
-
+   height: 500px;
+} 
 
 /* Although mobile first design was used throughout. Testing on different smaller devices and with google Devtools revealed the need to remove text over images */
 
