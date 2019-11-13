@@ -1,3 +1,4 @@
+// add to remove warning in jshint /* jshint esversion: 6 */
 var map;
 const COUNTRY_RESTRICT = {
 	'country': 'in'
@@ -159,8 +160,8 @@ function renderMap() {
 		}
 	
 	});
-	///// end of geocoder function for Address A
-  ///// end of geocoder function for Address B
+   // end of geocoder function for Address A
+  // end of geocoder function for Address B
 } // end of function **--renderMap--**
 
 // create markers with relevant icon for each meeting location option and drop onto map
